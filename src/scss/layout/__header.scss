@@ -1,0 +1,97 @@
+.header{
+
+    background-color : white;
+    display : flex;
+    flex-direction : column;
+
+    .headerContainer{
+
+        display : flex;
+        flex-direction: column;
+
+        justify-content : space-between;
+        align-items : center;
+        padding : 2rem;
+
+        @include tablet{
+            flex-direction: row;
+        }
+
+        .logo{
+
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            
+            .imageLogo{
+
+                width: 3rem;
+                height: 3rem;
+
+                @include tablet(){
+                    width : 5rem;
+                    height : 5rem;
+                }
+
+            }
+
+            .textLogo{
+
+                font-family : $OpenSans;
+                text-transform : uppercase;
+                color : $textGray;
+                margin-left: 1rem;
+
+                font-size : 2rem;
+
+                @include tablet(){
+                    font-size : 2.5rem;
+                }
+                
+                @include desktop(){
+                    font-size : 3.6rem;
+                }
+
+                span{
+                    color : $primary;
+                    margin-left: 1rem;
+                }
+            }
+
+        }
+
+        .callUs{
+
+            font-family : $OpenSans;
+            text-transform : uppercase;
+            color : $textGray;
+
+            font-size : 2rem;
+
+            @include tablet(){
+                font-size : 2.5rem;
+            }
+            
+            @include desktop(){
+                font-size : 3.6rem;
+            }
+
+            span{
+                color : $primary;
+                margin-left: 1rem;
+            }
+
+        }
+
+
+    }
+
+    .LightGrayDivider{
+
+        height: 1rem;
+        width: 100%;
+        background-color: $gray;
+
+    }
+
+}

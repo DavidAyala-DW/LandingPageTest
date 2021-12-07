@@ -1,0 +1,15 @@
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;600&display=swap');
+
+//Base
+@import "base/__normalize.scss";
+@import "base/__variables.scss";
+@import "base/__mixins.scss";
+@import "base/__global.scss";
+@import "base/_utilities.scss";
+
+//Layout
+@import "layout/__navBar.scss";
+@import "layout/__header.scss";
+@import "layout/__body.scss";
+@import "layout/__footer.scss";
